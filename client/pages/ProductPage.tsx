@@ -81,7 +81,7 @@ export default function ProductPage() {
               </span>
             </div>
 
-            <h1 className="font-bold text-white mb-8 leading-tight" style={{fontSize: '48px'}}>
+            <h1 className="font-bold text-white mb-8 leading-tight text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
               POWERING GLOBAL PAYMENTS
               <br />
               WITH <span className="text-brand-green" style={{textShadow: '2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 0 2px 0 white, 2px 0 0 white, 0 -2px 0 white, -2px 0 0 white'}}>BLOCKCHAIN</span>
@@ -163,7 +163,7 @@ export default function ProductPage() {
                 Lorem ipsum dolor sit amet, consectetur elit.
               </h2>
               
-              <p className="text-gray-600 mb-8 leading-relaxed" style={{fontSize: '16px'}}>
+              <p className="text-gray-600 mb-8 leading-relaxed text-sm sm:text-base md:text-lg">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla 
                 suspendisse tortor aene. Lorem ipsum dolor sit amet, consectetur 
                 adipiscing elit. Feugiat nulla suspendisse tortor aene.
@@ -179,7 +179,7 @@ export default function ProductPage() {
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">
                       Lorem ipsum dolor sit amet
                     </h3>
-                    <p className="text-gray-600" style={{fontSize: '16px'}}>
+                    <p className="text-gray-600 text-sm sm:text-base">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                       Feugiat nulla suspendisse tortor aene.
                     </p>
@@ -194,7 +194,7 @@ export default function ProductPage() {
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">
                       Lorem ipsum dolor sit amet
                     </h3>
-                    <p className="text-gray-600" style={{fontSize: '16px'}}>
+                    <p className="text-gray-600 text-sm sm:text-base">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                       Feugiat nulla suspendisse tortor aene.
                     </p>
@@ -209,7 +209,7 @@ export default function ProductPage() {
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">
                       Lorem ipsum dolor sit amet
                     </h3>
-                    <p className="text-gray-600" style={{fontSize: '16px'}}>
+                    <p className="text-gray-600 text-sm" style={{fontSize: '16px'}}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                       Feugiat nulla suspendisse tortor aene.
                     </p>
@@ -247,7 +247,7 @@ export default function ProductPage() {
 
             {/* Main Heading */}
             <div className="text-center mb-6">
-              <h2 className="font-bold text-gray-900 leading-tight" style={{fontSize: '48px'}}>
+              <h2 className="font-bold text-gray-900 leading-tight text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
                 TAKE YOUR BUSINESS{' '}
                 <span className="text-brand-green">FURTHER</span>, FASTER<br />
                 AND <span className="text-brand-green">GLOBAL</span>
@@ -271,7 +271,7 @@ export default function ProductPage() {
                     <img src="/arrow.png" alt="Arrow" style={{width: '42px', height: '41px'}} />
                   </div>
                   <div className="mt-4 text-left">
-                    <h3 className="font-bold text-gray-900 mb-2" style={{fontSize: '18px'}}>SEND & RECEIVE</h3>
+                    <h3 className="font-bold text-gray-900 mb-2 text-base sm:text-lg">SEND & RECEIVE</h3>
                     <p className="text-gray-600 text-sm" style={{fontSize: '16px'}}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aenean.
                     </p>
@@ -284,7 +284,7 @@ export default function ProductPage() {
                       <img src="/wallet.png" alt="Wallet" style={{width: '43px', height: '39px'}} />
                     </div>
                   <div className="mt-4 text-left">
-                    <h3 className="font-bold text-gray-900 mb-2" style={{fontSize: '18px'}}>SEND & RECEIVE</h3>
+                    <h3 className="font-bold text-gray-900 mb-2 text-base sm:text-lg">SEND & RECEIVE</h3>
                     <p className="text-gray-600 text-sm" style={{fontSize: '16px'}}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aenean.
                     </p>
@@ -313,7 +313,7 @@ export default function ProductPage() {
                     <img src="/chart.png" alt="Chart" style={{width: '42px', height: '42px'}} />
                   </div>
                   <div className="mt-4 text-left">
-                    <h3 className="font-bold text-gray-900 mb-2" style={{fontSize: '18px'}}>SEND & RECEIVE</h3>
+                    <h3 className="font-bold text-gray-900 mb-2 text-base sm:text-lg">SEND & RECEIVE</h3>
                     <p className="text-gray-600 text-sm" style={{fontSize: '16px'}}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aenean.
                     </p>
@@ -326,7 +326,7 @@ export default function ProductPage() {
                     <img src="/reload.png" alt="Reload" style={{width: '58px', height: '47px'}} />
                   </div>
                   <div className="mt-4 text-left">
-                    <h3 className="font-bold text-gray-900 mb-2" style={{fontSize: '18px'}}>SEND & RECEIVE</h3>
+                    <h3 className="font-bold text-gray-900 mb-2 text-base sm:text-lg">SEND & RECEIVE</h3>
                     <p className="text-gray-600 text-sm" style={{fontSize: '16px'}}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aenean.
                     </p>
@@ -530,13 +530,15 @@ export default function ProductPage() {
         <div className="relative max-w-7xl mx-auto px-4 py-20 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 mb-8 sm:mb-12">
             {/* Left Section */}
-            <div className="space-y-4 sm:space-y-6">
-              <img
-                src="/logo.png"
-                alt="Praith Logo" 
-                className="h-5 xs:h-6 sm:h-7 md:h-8 lg:h-8 w-auto object-contain lg:object-none"
-              />
-              <div className="flex flex-wrap gap-4 sm:gap-6">
+            <div className="space-y-4 sm:space-y-6 text-center lg:text-left">
+              <div className="flex justify-center lg:justify-start">
+                <img
+                  src="/logo.png"
+                  alt="Praith Logo" 
+                  className="h-5 xs:h-6 sm:h-7 md:h-8 lg:h-8 w-auto object-contain lg:object-none"
+                />
+              </div>
+              <div className="flex flex-wrap gap-4 sm:gap-6 justify-center lg:justify-start">
                 <a href="#about" className="text-praith-white hover:text-brand-green transition-colors text-sm sm:text-base">{t('footer.links.aboutUs')}</a>
                 <a href="#features" className="text-praith-white hover:text-brand-green transition-colors text-sm sm:text-base">{t('footer.links.features')}</a>
                 <a href="#how-it-works" className="text-praith-white hover:text-brand-green transition-colors text-sm sm:text-base">{t('footer.links.howItWorks')}</a>
@@ -546,7 +548,7 @@ export default function ProductPage() {
             </div>
             
             {/* Right Section - Newsletter */}
-            <div className="space-y-3 sm:space-y-4">
+            <div className="space-y-3 sm:space-y-4 text-center lg:text-left">
               <div className="flex flex-col sm:flex-row rounded-lg border border-gray-600 overflow-hidden">
                 <input 
                   type="email" 
@@ -557,7 +559,7 @@ export default function ProductPage() {
                   {t('footer.newsletter.button')}
                 </button>
               </div>
-              <p className="text-praith-white text-right text-sm sm:text-base">{t('footer.newsletter.commitment')}</p>
+              <p className="text-praith-white text-center lg:text-right text-sm sm:text-base">{t('footer.newsletter.commitment')}</p>
             </div>
           </div>
           
@@ -567,7 +569,7 @@ export default function ProductPage() {
               <p className="text-praith-white text-sm sm:text-base text-center lg:text-left">{t('footer.copyright')}</p>
               
               {/* Social Links */}
-              <div className="flex gap-3 sm:gap-4">
+              <div className="flex gap-3 sm:gap-4 justify-center lg:justify-end">
                 {[
                   'facebook', 'twitter', 'linkedin', 'instagram'
                 ].map((social) => (

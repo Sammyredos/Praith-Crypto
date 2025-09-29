@@ -138,10 +138,10 @@ export default function Header() {
                 {t('header.nav.home')}
               </Link>
               <Link 
-                to={`/${language}/product`} 
+                to={`/product/${language}`} 
                 onClick={handleMobileLinkClick} 
                 className={`block px-3 py-2 font-medium text-sm sm:text-base rounded hover:text-white hover:bg-gray-800/50 transition-colors ${
-                  location.pathname === `/${language}/product` ? 'text-brand-green font-bold' : 'text-gray-300'
+                  location.pathname === `/product/${language}` ? 'text-brand-green font-bold' : 'text-gray-300'
                 }`}
               >
                 {t('header.nav.product')}

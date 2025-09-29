@@ -97,10 +97,10 @@ export default function Index() {
               
               {/* Main Heading */}
               <div className="space-y-2 sm:space-y-3 lg:space-y-4">
-                <h1 className="font-bold leading-tight tracking-wide" style={{fontSize: '48px'}}>
+                <h1 className="font-bold leading-tight tracking-wide text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
                   {t('hero.mainHeading1')}
                 </h1>
-                <h1 className="font-bold text-brand-green leading-tight tracking-wide" style={{fontSize: '48px'}}>
+                <h1 className="font-bold text-brand-green leading-tight tracking-wide text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
                   {t('hero.mainHeading2')}
                 </h1>
               </div>
@@ -205,7 +205,7 @@ export default function Index() {
               </div>
               
               {/* Heading */}
-              <h2 className="font-bold leading-tight text-center lg:text-left" style={{fontSize: '48px'}}>
+              <h2 className="font-bold leading-tight text-center lg:text-left text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
                 {t('about.heading')}
               </h2>
               
@@ -336,7 +336,7 @@ export default function Index() {
               <span className="text-black font-medium text-sm uppercase">{t('howItWorks.badge')}</span>
             </div>
 
-            <h2 className="font-bold text-white uppercase leading-[120%] max-w-[709px] px-4" style={{fontSize: '48px'}}>
+            <h2 className="font-bold text-white uppercase leading-[120%] max-w-[709px] px-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
               {t('howItWorks.heading')}
             </h2>
             <p className="text-white text-base sm:text-lg leading-6 px-4">{t('howItWorks.description')}</p>
@@ -453,7 +453,7 @@ export default function Index() {
               <span className="text-praith-dark font-medium text-sm uppercase tracking-wider">{t('features.badge')}</span>
             </div>
             
-            <h2 className="font-bold leading-tight mb-3 sm:mb-4" style={{fontSize: '48px'}}>
+            <h2 className="font-bold leading-tight mb-3 sm:mb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
               {t('features.heading')}
             </h2>
             <p className="text-base sm:text-lg text-black px-4">{t('features.description')}</p>
@@ -541,7 +541,7 @@ export default function Index() {
               <span className="text-praith-dark font-medium text-sm uppercase tracking-wider">{t('testimonials.badge')}</span>
             </div>
             
-            <h2 className="font-bold text-black uppercase px-4" style={{fontSize: '48px'}}>
+            <h2 className="font-bold text-black uppercase px-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
               {t('testimonials.heading')}
             </h2>
           </div>
@@ -674,7 +674,7 @@ export default function Index() {
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mt-3 sm:mt-4 max-w-lg mx-auto lg:mx-0">
                   {t('ctaSection.heading')}
                 </h2>
-                <p className="text-white/80 text-sm sm:text-base mt-4 sm:mt-6 max-w-lg leading-relaxed mx-auto lg:mx-0">
+                <p className="text-gray-300 leading-relaxed text-sm sm:text-base md:text-lg lg:text-xl max-w-lg mx-auto lg:mx-0 mt-4 sm:mt-6">
                   {t('ctaSection.description')}
                 </p>
               </div>
@@ -716,7 +716,7 @@ export default function Index() {
             </div>
             
             {/* Right Section - Newsletter */}
-            <div className="space-y-3 sm:space-y-4">
+            <div className="space-y-3 sm:space-y-4 text-center lg:text-left">
               <div className="flex flex-col sm:flex-row rounded-lg border border-gray-600 overflow-hidden">
                 <input 
                   type="email" 
@@ -727,7 +727,7 @@ export default function Index() {
                   {t('footer.newsletter.button')}
                 </button>
               </div>
-              <p className="text-praith-white text-right text-sm sm:text-base">{t('footer.newsletter.commitment')}</p>
+              <p className="text-praith-white text-center lg:text-right text-sm sm:text-base">{t('footer.newsletter.commitment')}</p>
             </div>
           </div>
           
@@ -737,7 +737,7 @@ export default function Index() {
               <p className="text-praith-white text-sm sm:text-base text-center lg:text-left">{t('footer.copyright')}</p>
               
               {/* Social Links */}
-              <div className="flex gap-3 sm:gap-4">
+              <div className="flex gap-3 sm:gap-4 justify-center lg:justify-end">
                 {[
                   'facebook', 'twitter', 'linkedin', 'instagram'
                 ].map((social) => (
