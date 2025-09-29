@@ -5,6 +5,27 @@ services:
     staticPublishPath: ./dist
     routes:
       - type: rewrite
+        source: /en
+        destination: /index.html
+      - type: rewrite
+        source: /es
+        destination: /index.html
+      - type: rewrite
+        source: /fr
+        destination: /index.html
+      - type: rewrite
+        source: /de
+        destination: /index.html
+      - type: rewrite
+        source: /zh
+        destination: /index.html
+      - type: rewrite
+        source: /pt
+        destination: /index.html
+      - type: rewrite
+        source: /product/*
+        destination: /index.html
+      - type: rewrite
         source: /*
         destination: /index.html
     envVars:

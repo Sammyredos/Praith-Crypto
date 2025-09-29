@@ -1,5 +1,13 @@
-# Handle SPA routing - serve index.html for all routes
-/*    /index.html   200
+# Specific language routes
+/en    /index.html   200
+/es    /index.html   200
+/fr    /index.html   200
+/de    /index.html   200
+/zh    /index.html   200
+/pt    /index.html   200
 
-# Ensure 404s are handled by the SPA
-/404   /index.html   200
+# Product page routes
+/product/*    /index.html   200
+
+# Catch-all for SPA routing
+/*    /index.html   200
