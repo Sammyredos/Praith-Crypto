@@ -700,13 +700,15 @@ export default function Index() {
         <div className="relative max-w-7xl mx-auto px-4 py-20 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 mb-8 sm:mb-12">
             {/* Left Section */}
-            <div className="space-y-4 sm:space-y-6">
-              <img
-                src="/logo.png"
-                alt="Praith Logo" 
-                className="h-5 xs:h-6 sm:h-7 md:h-8 lg:h-8 w-auto object-contain lg:object-none"
-              />
-              <div className="flex flex-wrap gap-4 sm:gap-6">
+            <div className="space-y-4 sm:space-y-6 text-center lg:text-left">
+              <div className="flex justify-center lg:justify-start">
+                <img
+                  src="/logo.png"
+                  alt="Praith Logo" 
+                  className="h-5 xs:h-6 sm:h-7 md:h-8 lg:h-8 w-auto object-contain lg:object-none"
+                />
+              </div>
+              <div className="flex flex-wrap gap-4 sm:gap-6 justify-center lg:justify-start">
                 <a href="#about" className="text-praith-white hover:text-brand-green transition-colors text-sm sm:text-base">{t('footer.links.aboutUs')}</a>
                 <a href="#features" className="text-praith-white hover:text-brand-green transition-colors text-sm sm:text-base">{t('footer.links.features')}</a>
                 <a href="#how-it-works" className="text-praith-white hover:text-brand-green transition-colors text-sm sm:text-base">{t('footer.links.howItWorks')}</a>

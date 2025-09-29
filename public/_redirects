@@ -1,1 +1,5 @@
+# Handle SPA routing - serve index.html for all routes
 /*    /index.html   200
+
+# Ensure 404s are handled by the SPA
+/404   /index.html   200
