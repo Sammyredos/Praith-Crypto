@@ -4,6 +4,7 @@ services:
     buildCommand: npm run build:render
     staticPublishPath: ./dist
     routes:
+      # Language root routes (e.g., /en, /es, etc.)
       - type: rewrite
         source: /en
         destination: /index.html
@@ -22,9 +23,28 @@ services:
       - type: rewrite
         source: /pt
         destination: /index.html
+      
+      # Language + product routes (e.g., /en/product, /es/product, etc.)
       - type: rewrite
-        source: /product/*
+        source: /en/product
         destination: /index.html
+      - type: rewrite
+        source: /es/product
+        destination: /index.html
+      - type: rewrite
+        source: /fr/product
+        destination: /index.html
+      - type: rewrite
+        source: /de/product
+        destination: /index.html
+      - type: rewrite
+        source: /zh/product
+        destination: /index.html
+      - type: rewrite
+        source: /pt/product
+        destination: /index.html
+      
+      # Catch-all for any other paths - this will let React Router handle 404s
       - type: rewrite
         source: /*
         destination: /index.html

@@ -43,38 +43,32 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
   // Detect language from current pathname
   useEffect(() => {
     const pathSegments = location.pathname.split('/').filter(Boolean);
+    const firstSegment = pathSegments[0];
     
-    // Handle /product/lang routes
-    if (pathSegments[0] === 'product' && pathSegments[1]) {
-      const langFromPath = pathSegments[1];
-      const validLanguages = availableLanguages.map(l => l.code);
-      if (validLanguages.includes(langFromPath as Language)) {
-        setLanguageState(langFromPath as Language);
-      }
+    // Check if first segment is a valid language
+    const validLanguages = availableLanguages.map(l => l.code);
+    if (firstSegment && validLanguages.includes(firstSegment as Language)) {
+      setLanguageState(firstSegment as Language);
     } else {
-      // Handle regular /lang routes
-      const firstSegment = pathSegments[0];
-      const validLanguages = availableLanguages.map(l => l.code);
-      if (firstSegment && validLanguages.includes(firstSegment as Language)) {
-        setLanguageState(firstSegment as Language);
-      }
+      // Default to English if no valid language found
+      setLanguageState('en');
     }
   }, [location.pathname]);
 
   const setLanguage = (newLang: Language) => {
     setLanguageState(newLang);
-    const currentPath = window.location.pathname;
+    const pathSegments = location.pathname.split('/').filter(Boolean);
     
-    // Handle the new routing structure /product/lang
-    if (currentPath.startsWith('/product/')) {
-      const newPath = `/product/${newLang}`;
-      navigate(newPath);
+    // Replace the first segment (current language) with new language
+    if (pathSegments.length > 0 && availableLanguages.map(l => l.code).includes(pathSegments[0] as Language)) {
+      pathSegments[0] = newLang;
     } else {
-      // Handle regular language routes /lang
-      const pathWithoutLang = currentPath.replace(/^\/(en|es|fr|de|zh|pt)/, '');
-      const newPath = `/${newLang}${pathWithoutLang}`;
-      navigate(newPath);
+      // If no language in current path, prepend the new language
+      pathSegments.unshift(newLang);
     }
+    
+    const newPath = '/' + pathSegments.join('/');
+    navigate(newPath);
   };
 
   const t = (key: string): string => {
