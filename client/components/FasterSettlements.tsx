@@ -16,9 +16,6 @@ export default function FasterSettlements() {
             {/* Left Content */}
             <div className="p-6 sm:p-8 md:p-12 lg:py-16 lg:px-16 space-y-4 sm:space-y-6 lg:space-y-8 relative z-10">
               <div className="space-y-4 sm:space-y-6 lg:space-y-6">
-                <div className="text-brand-green font-semibold uppercase tracking-[1px] sm:tracking-[2px] leading-4 text-xs sm:text-sm lg:text-[13px]">
-                  {t('fasterSettlements.badge')}
-                </div>
                 <h3 className="font-bold text-[#1B1F28] leading-tight sm:leading-[1.2] lg:leading-[1.1] tracking-[-0.5px] sm:tracking-[-1px] text-2xl sm:text-3xl md:text-4xl lg:text-[42px] max-w-full lg:max-w-[420px]">
                   {t('fasterSettlements.heading')}
                 </h3>

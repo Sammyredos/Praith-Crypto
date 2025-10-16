@@ -14,15 +14,20 @@ export const en = {
   // Hero Section
   hero: {
     trustedPlatform: "100% TRUSTED PLATFORM",
-    mainHeading1: "POWERING GLOBAL PAYMENTS WITH",
-    mainHeading2: "BLOCKCHAIN",
-    description: "Praith is a blockchain-powered crypto payment gateway that solves the traditional payment problems. Our platform enables fast, low-fee, and borderless transactions using stablecoins on the Tron and Binance Smart Chain (BEP-20) networks.",
-    getStarted: "Get Started"
+    mainHeading1: "Accept Crypto Payments Instantly &",
+    mainHeading2: "Securely",
+    description: "Receive payments worldwide in minutes with fees as low as 1.2% (capped at $10). Faster, cheaper, and simpler than banks and card processors that charge over 6%.",
+    getStarted: "Get Started Free"
+  },
+
+  // Buttons
+  buttons: {
+    seeHowItWorks: "See how it Works"
   },
 
   // Faster Settlements Section
   fasterSettlements: {
-    badge: "INSTANT TRANSACTION",
+  
     heading: "Faster Settlements",
     description: "Compared to traditional payment processors, we typically charge lower transactions fees (e.g. 12% capped at $5) and offer near-instant settlements, eliminating the delays and high costs associated with banks and card processors."
   },
@@ -39,8 +44,8 @@ export const en = {
 
   // About Section
   about: {
-    badge: "ABOUT US",
-    heading: "ACCEPT CRYPTO PAYMENT SEAMLESSLY & SECURELY",
+    
+    heading: "Save Up to 80% on Transaction Fees",
     globalAccessibility: {
       title: "Global Accessibility",
       description: "Accept payments from customers worldwide without geographical restrictions or complex banking requirements."
@@ -57,16 +62,86 @@ export const en = {
 
   // Anywhere Section
   anywhere: {
-    badge: "ANYWHERE, ANYTIME",
+    
     heading: "Global, Boarderless Transactions",
-    description: "Experience the freedom of borderless payments with Praith's advanced blockchain technology. Accept payments from anywhere in the world, at any time, without the limitations of traditional banking systems."
+    description: " Unlike banks and traditional processors that limit where and how you can get paid, we give you true global freedom. You can receive payment in minutes from anywhere in the world, from Utopia to Iceland to Zanzibar to anywhere in the world you can think of. No restrictions, no delays, no costly cross-border fees."
+  },
+
+  // Product Page (localized content)
+  productPage: {
+    hero: {
+      headingBefore: "Payment Gateway Built for the",
+      headingAccent: "Future",
+      description: "Praith makes accepting crypto payments seamless, secure, and global at a fraction of the cost of banks and processors."
+    },
+    trustedBy: {
+      heading: "Trusted by Over 5,500+ Industry Leaders"
+    },
+    popUpCheckout: {
+      badge: "WHAT WE DO",
+      heading: "Pop-Up Checkout",
+      description: "Add Praith’s pop-up checkout to your website or app and start accepting crypto instantly. No redirects, no friction, just a clean, fast payment experience your customers will love.",
+      features: {
+        bankSecurity: {
+          title: "Bank‑level security",
+          description: "Encrypted transactions with on‑chain transparency and built‑in fraud protection."
+        },
+        globalPayments: {
+          title: "Global payments",
+          description: "Accept crypto from anywhere — works across web and mobile."
+        },
+        simpleSetup: {
+          title: "Simple setup & support",
+          description: "Add a small snippet and go live quickly — we’re here to help."
+        }
+      }
+    },
+    benefits: {
+      badge: "BENEFITS",
+      headingLine1: "Grow your business further, faster and",
+      headingAccent: "globally",
+      description: "Benefits that make our platform unique",
+      cards: {
+        sendReceive: {
+          title: "Send & Receive",
+          description: "Move funds in and out seamlessly with secure on‑chain payments."
+        },
+        secureWallet: {
+          title: "Secure Wallet",
+          description: "Store and manage balances with enterprise‑grade security."
+        },
+        realTimeReporting: {
+          title: "Real‑time Reporting",
+          description: "Monitor transactions and settlement status with clear dashboards."
+        },
+        instantSettlements: {
+          title: "Instant Settlements",
+          description: "Receive funds in minutes — no bank delays or chargebacks."
+        }
+      },
+      centerCard: {
+        heading: "Everything you need to accept crypto payments",
+        description: "Simple setup, predictable fees, and instant payouts. Accept payments worldwide in minutes."
+      }
+    },
+    features: {
+      badge: "OUR FEATURES",
+      heading: "Designed for seamless crypto payments",
+      description: "Accept payments worldwide with low, predictable fees and near‑instant settlement. Integrate quickly using our simple API, plugins, and webhooks.",
+      bullets: {
+        a: "Accept payments worldwide in USDT, USDC, and more",
+        b: "Pay only 1.2% per transaction, capped at $10",
+        c: "Instant settlement to your Praith wallet",
+        d: "Quick integration via API, plugins, and webhooks"
+      }
+    }
   },
 
   // How It Works Section
   howItWorks: {
-    badge: "HOW IT WORKS",
-    heading: "Get Started in 3 Simple Steps",
-    description: "Simple Onboarding, Effortless Security, and Exceptional Support.",
+    
+    heading: "How it Works",
+    description: "Simple Onbording, Effortless Security and Exceptional Support",
     steps: {
       createAccount: {
         title: "Create An Account",
@@ -85,8 +160,8 @@ export const en = {
 
   // Features Section
   features: {
-    badge: "OUR FEATURES",
-    heading: "TAKE YOUR BUSINESS FURTHER, FASTER AND GLOBAL",
+ 
+    heading: "Benefits",
     description: "Some of the features that makes Praith stand out from the traditional systems",
     items: {
       lowerFees: {
@@ -118,13 +193,12 @@ export const en = {
 
   // Testimonials Section
   testimonials: {
-    badge: "TESTIMONIAL",
-    heading: "WHAT OUR CLIENTS SAY"
+
+    heading: "What Our Clients Say"
   },
 
   // FAQ Section
   faq: {
-    badge: "FAQS",
     heading: "Frequently Asked Questions",
     description: "Answers to the most frequently asked questions",
     haveQuestion: "Have A Question"
@@ -132,9 +206,9 @@ export const en = {
 
   // CTA Section
   ctaSection: {
-    badge: "TRY IT NOW",
+
     heading: "Power Your Checkout with USDT",
-    description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+    description: "Add USDT to your checkout for stable, USD‑equivalent payments. Simple integration, predictable fees, and instant settlement.",
     button: "Create a Free Account"
   },
 
@@ -169,28 +243,43 @@ export const en = {
   faqData: [
     {
       id: 1,
-      question: "What cryptocurrencies does Praith support?",
-      answer: "Praith supports major cryptocurrencies including Bitcoin (BTC), Ethereum (ETH), USDT, USDC, and many other popular digital assets. We continuously expand our supported currencies based on market demand."
+      question: "How fast will I receive my payments?",
+      answer: "Payments settle instantly in your Praith wallet, and funds are automatically transferred to your personal crypto wallet at the end of the day. No more waiting 3-5 business days like banks."
     },
     {
       id: 2,
-      question: "How long does it take to receive payments?",
-      answer: "Payment confirmation times vary by cryptocurrency. Most transactions are confirmed within minutes, with final settlement typically occurring within 1-6 network confirmations depending on the blockchain."
+      question: "What fees does Praith charge?",
+      answer: "We charge only 1.2% per transaction, capped at $10. That means whether you receive $100 or $10,000, you'll never pay more than $10. No hidden costs."
     },
     {
       id: 3,
-      question: "What are the transaction fees?",
-      answer: "Our transaction fees are significantly lower than traditional payment processors, typically ranging from 0.5% to 2.9% depending on the cryptocurrency and transaction volume. No hidden fees or setup costs."
+      question: "What currencies can I accept?",
+      answer: "You can accept payments in popular cryptocurrencies such as USDT, USDC, and EURC with more options coming soon."
     },
     {
       id: 4,
-      question: "Is KYC verification required?",
-      answer: "Yes, we require KYC verification to ensure compliance with international regulations and to provide the highest level of security for all transactions. The process is quick and straightforward."
+      question: "Is using Praith secure?",
+      answer: "Yes. Praith is built on the Tron network, so every transaction is transparent and viewable on-chain. Combined with encryption and fraud monitoring, your payments are secure and verifiable at all times."
     },
     {
       id: 5,
-      question: "Can I integrate Praith with my existing platform?",
-      answer: "Absolutely! Praith offers comprehensive APIs, plugins, and webhooks that make integration simple. We support popular e-commerce platforms and provide detailed documentation for custom integrations."
+      question: "Do I need a developer to set it up?",
+      answer: "Not necessarily. Praith offers a simple API for developers, but we also provide plug-and-play integration for websites, online stores, and apps."
+    },
+    {
+      id: 6,
+      question: "Can African businesses use Praith?",
+      answer: "Absolutely. African businesses can accept crypto payments from anywhere in the world and get paid directly in their wallets without banking delays or high international transfer fees."
+    },
+    {
+      id: 7,
+      question: "Is Praith compliant with regulations?",
+      answer: "Yes. We follow global KYC (Know Your Customer) and AML (Anti-Money Laundering) standards, so your business stays safe and compliant."
+    },
+    {
+      id: 8,
+      question: "Is KYC required to use Praith?",
+      answer: "Yes. To keep our platform secure and compliant, KYC (Know Your Customer) verification is required. This protects your business, prevents fraud, and ensures compliance with international standards."
     }
   ],
 

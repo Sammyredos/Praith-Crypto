@@ -14,10 +14,15 @@ export const pt = {
   // Hero Section
   hero: {
     trustedPlatform: "PLATAFORMA 100% CONFIÁVEL",
-    mainHeading1: "POTENCIALIZANDO PAGAMENTOS GLOBAIS COM",
-    mainHeading2: "BLOCKCHAIN",
-    description: "Praith é um gateway de pagamento cripto alimentado por blockchain que resolve os problemas de pagamento tradicionais. Nossa plataforma permite transações rápidas, de baixa taxa e sem fronteiras usando stablecoins nas redes Tron e Binance Smart Chain (BEP-20).",
-    getStarted: "Começar"
+    mainHeading1: "Aceite pagamentos em cripto instantaneamente e",
+    mainHeading2: "com segurança",
+    description: "Receba pagamentos no mundo inteiro em minutos com taxas a partir de 1,2% (limitadas a $10). Mais rápido, barato e simples do que bancos e processadores de cartão que cobram mais de 6%.",
+    getStarted: "Começar grátis"
+  },
+
+  // Buttons
+  buttons: {
+    seeHowItWorks: "Veja como funciona"
   },
 
   // Faster Settlements Section
@@ -25,6 +30,76 @@ export const pt = {
     badge: "TRANSAÇÃO INSTANTÂNEA",
     heading: "Liquidações Mais Rápidas",
     description: "Comparado aos processadores de pagamento tradicionais, normalmente cobramos taxas de transação mais baixas (ex: 12% limitado a $5) e oferecemos liquidações quase instantâneas, eliminando os atrasos e altos custos associados aos bancos e processadores de cartão."
+  },
+
+  // Product Page (conteúdo localizado)
+  productPage: {
+    hero: {
+      headingBefore: "Gateway de Pagamento Construído para o",
+      headingAccent: "Futuro",
+      description: "A Praith torna a aceitação de pagamentos em cripto simples, segura e global, por uma fração do custo de bancos e processadores."
+    },
+    trustedBy: {
+      heading: "Confiado por mais de 5.500 líderes do setor"
+    },
+    popUpCheckout: {
+      badge: "O QUE FAZEMOS",
+      heading: "Checkout Pop‑up",
+      description: "Adicione o checkout pop‑up da Praith ao seu site ou app e comece a aceitar cripto instantaneamente. Sem redirecionamentos, sem fricção — apenas uma experiência de pagamento rápida e simples que seus clientes vão adorar.",
+      features: {
+        bankSecurity: {
+          title: "Segurança de nível bancário",
+          description: "Transações criptografadas com transparência on‑chain e proteção antifraude integrada."
+        },
+        globalPayments: {
+          title: "Pagamentos globais",
+          description: "Aceite cripto de qualquer lugar — funciona na Web e no mobile."
+        },
+        simpleSetup: {
+          title: "Configuração simples e suporte",
+          description: "Adicione um pequeno snippet e vá ao ar rapidamente — estamos aqui para ajudar."
+        }
+      }
+    },
+    benefits: {
+      badge: "BENEFÍCIOS",
+      headingLine1: "Faça seu negócio crescer mais, mais rápido e",
+      headingAccent: "globalmente",
+      description: "Benefícios que tornam nossa plataforma única",
+      cards: {
+        sendReceive: {
+          title: "Enviar e Receber",
+          description: "Movimente fundos com pagamentos on‑chain seguros."
+        },
+        secureWallet: {
+          title: "Carteira Segura",
+          description: "Armazene e gerencie saldos com segurança de nível empresarial."
+        },
+        realTimeReporting: {
+          title: "Relatórios em Tempo Real",
+          description: "Acompanhe transações e status de liquidação em painéis claros."
+        },
+        instantSettlements: {
+          title: "Liquidações Instantâneas",
+          description: "Receba fundos em minutos — sem atrasos bancários ou estornos."
+        }
+      },
+      centerCard: {
+        heading: "Tudo o que você precisa para aceitar pagamentos em cripto",
+        description: "Configuração simples, taxas previsíveis e pagamentos instantâneos. Aceite pagamentos no mundo inteiro em minutos."
+      }
+    },
+    features: {
+      badge: "NOSSOS RECURSOS",
+      heading: "Projetado para pagamentos em cripto sem atrito",
+      description: "Aceite pagamentos no mundo inteiro com taxas baixas e previsíveis e liquidação quase instantânea. Integre rapidamente usando nossa API simples, plugins e webhooks.",
+      bullets: {
+        a: "Aceite pagamentos em USDT, USDC e mais, no mundo inteiro",
+        b: "Pague apenas 1,2% por transação, limitado a $10",
+        c: "Liquidação instantânea na sua carteira Praith",
+        d: "Integração rápida via API, plugins e webhooks"
+      }
+    }
   },
 
   // Payment Interface
@@ -40,7 +115,7 @@ export const pt = {
   // About Section
   about: {
     badge: "SOBRE NÓS",
-    heading: "ACEITE PAGAMENTOS CRIPTO DE FORMA PERFEITA E SEGURA",
+    heading: "Economize até 80% nas taxas de transação",
     globalAccessibility: {
       title: "Acessibilidade Global",
       description: "Aceite pagamentos de clientes em todo o mundo sem restrições geográficas ou requisitos bancários complexos."
@@ -65,11 +140,11 @@ export const pt = {
   // How It Works Section
   howItWorks: {
     badge: "COMO FUNCIONA",
-    heading: "Comece em 3 Passos Simples",
-    description: "Integração Simples, Segurança Sem Esforço e Suporte Excepcional.",
+    heading: "Como Funciona",
+    description: "Onboarding simples, segurança sem esforço e suporte excepcional.",
     steps: {
       createAccount: {
-        title: "Criar Uma Conta",
+        title: "Criar uma Conta",
         description: "Inscreva-se na sua conta Praith em minutos com nosso processo de integração simplificado."
       },
       kycVerification: {
@@ -86,7 +161,7 @@ export const pt = {
   // Features Section
   features: {
     badge: "NOSSAS FUNCIONALIDADES",
-    heading: "LEVE SEU NEGÓCIO MAIS LONGE, MAIS RÁPIDO E GLOBAL",
+    heading: "Benefícios",
     description: "Algumas das funcionalidades que fazem a Praith se destacar dos sistemas tradicionais",
     items: {
       lowerFees: {
@@ -134,7 +209,7 @@ export const pt = {
   ctaSection: {
     badge: "EXPERIMENTE AGORA",
     heading: "Potencialize Seu Checkout com USDT",
-    description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.",
+    description: "Adicione USDT ao seu checkout para pagamentos estáveis, equivalentes ao USD. Integração simples, taxas previsíveis e liquidação instantânea.",
     button: "Criar uma Conta Gratuita"
   },
 
@@ -169,28 +244,43 @@ export const pt = {
   faqData: [
     {
       id: 1,
-      question: "Que criptomoedas a Praith suporta?",
-      answer: "A Praith suporta as principais criptomoedas incluindo Bitcoin (BTC), Ethereum (ETH), USDT, USDC e muitos outros ativos digitais populares. Expandimos continuamente nossas moedas suportadas com base na demanda do mercado."
+      question: "Quão rápido vou receber meus pagamentos?",
+      answer: "Os pagamentos são liquidados instantaneamente na sua carteira Praith e, ao final do dia, os fundos são transferidos automaticamente para sua carteira cripto pessoal. Nada de esperar 3–5 dias úteis como nos bancos."
     },
     {
       id: 2,
-      question: "Quanto tempo demora para receber pagamentos?",
-      answer: "Os tempos de confirmação de pagamento variam por criptomoeda. A maioria das transações são confirmadas em minutos, com liquidação final ocorrendo tipicamente dentro de 1-6 confirmações de rede dependendo da blockchain."
+      question: "Que taxas a Praith cobra?",
+      answer: "Cobramos apenas 1,2% por transação, limitado a $10. Isso significa que, receba você $100 ou $10.000, nunca pagará mais de $10. Sem custos ocultos."
     },
     {
       id: 3,
-      question: "Quais são as taxas de transação?",
-      answer: "Nossas taxas de transação são significativamente mais baixas que os processadores de pagamento tradicionais, tipicamente variando de 0,5% a 2,9% dependendo da criptomoeda e volume de transação. Sem taxas ocultas ou custos de configuração."
+      question: "Quais moedas posso aceitar?",
+      answer: "Você pode aceitar pagamentos em criptomoedas populares como USDT, USDC e EURC; mais opções em breve."
     },
     {
       id: 4,
-      question: "A verificação KYC é obrigatória?",
-      answer: "Sim, exigimos verificação KYC para garantir conformidade com regulamentações internacionais e fornecer o mais alto nível de segurança para todas as transações. O processo é rápido e direto."
+      question: "Usar a Praith é seguro?",
+      answer: "Sim. A Praith é construída na rede Tron, então cada transação é transparente e visível on-chain. Com criptografia e monitoramento de fraude, seus pagamentos são seguros e verificáveis o tempo todo."
     },
     {
       id: 5,
-      question: "Posso integrar a Praith com minha plataforma existente?",
-      answer: "Absolutamente! A Praith oferece APIs abrangentes, plugins e webhooks que tornam a integração simples. Suportamos plataformas de e-commerce populares e fornecemos documentação detalhada para integrações personalizadas."
+      question: "Preciso de um desenvolvedor para configurar?",
+      answer: "Não necessariamente. A Praith oferece uma API simples para desenvolvedores, e também fornecemos integração plug‑and‑play para sites, lojas online e aplicativos."
+    },
+    {
+      id: 6,
+      question: "Empresas africanas podem usar a Praith?",
+      answer: "Com certeza. Empresas africanas podem aceitar pagamentos cripto de qualquer lugar do mundo e receber diretamente em suas carteiras — sem atrasos bancários ou altas taxas de transferências internacionais."
+    },
+    {
+      id: 7,
+      question: "A Praith está em conformidade com as regulações?",
+      answer: "Sim. Seguimos padrões globais de KYC (Conheça seu Cliente) e AML (Antilavagem de Dinheiro), para que seu negócio permaneça seguro e em conformidade."
+    },
+    {
+      id: 8,
+      question: "KYC é obrigatório para usar a Praith?",
+      answer: "Sim. Para manter nossa plataforma segura e em conformidade, a verificação KYC é obrigatória. Isso protege seu negócio, previne fraudes e garante a conformidade com padrões internacionais."
     }
   ],
 

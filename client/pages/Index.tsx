@@ -76,24 +76,7 @@ export default function Index() {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="text-white space-y-4 sm:space-y-6 lg:space-y-8 order-2 lg:order-1 text-center md:text-center lg:text-left">
-              {/* Badge */}
-              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/20 justify-center md:justify-center lg:justify-start">
-                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clipPath="url(#clip0_7322_4302)">
-                    <path fillRule="evenodd" clipRule="evenodd" d="M8.25564 14.3359C8.95178 13.3064 9.01593 12.1945 8.44808 11.0002C8.29017 11.6409 8.00131 12.0298 7.58148 12.1669C7.97134 11.0535 7.64557 9.85058 6.60413 8.55818C6.58165 9.89299 6.26088 10.8653 5.64179 11.4752C4.78894 12.3146 4.79898 13.2619 5.67187 14.3171C2.04833 12.3888 1.53711 9.80248 4.13816 6.55834C4.29949 7.34206 4.69042 7.82323 5.31101 8.00184C4.63456 5.13127 5.34629 2.68534 7.44618 0.664062C7.45908 5.14972 8.83461 5.54842 10.5738 7.55072C12.4515 9.95358 11.348 12.7265 8.25564 14.3359Z" fill="url(#paint0_linear_7322_4302)"/>
-                  </g>
-                  <defs>
-                    <linearGradient id="paint0_linear_7322_4302" x1="11.1985" y1="4.41639" x2="3.19901" y2="12.4159" gradientUnits="userSpaceOnUse">
-                      <stop stopColor="#EF3E3D"/>
-                      <stop offset="1" stopColor="#FFC828"/>
-                    </linearGradient>
-                    <clipPath id="clip0_7322_4302">
-                      <rect width="14" height="14" fill="white" transform="translate(0 0.5)"/>
-                    </clipPath>
-                  </defs>
-                </svg>
-                <span className="text-praith-white font-medium text-sm uppercase tracking-wider">{t('hero.trustedPlatform')}</span>
-              </div>
+
               
               {/* Main Heading */}
               <div className="space-y-2 sm:space-y-3 lg:space-y-4">
@@ -184,28 +167,10 @@ export default function Index() {
             {/* Content Section */}
             <div className="space-y-6 sm:space-y-8 order-2 lg:order-2 lg:col-span-1">
               {/* Badge */}
-              <div className="flex justify-center lg:justify-start">
-                <div className="inline-flex items-center gap-2 bg-praith-neutral-50 border border-praith-neutral-200 px-4 py-2 rounded-lg">
-                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clipPath="url(#clip0_7322_4302_about)">
-                    <path fillRule="evenodd" clipRule="evenodd" d="M8.25564 14.3359C8.95178 13.3064 9.01593 12.1945 8.44808 11.0002C8.29017 11.6409 8.00131 12.0298 7.58148 12.1669C7.97134 11.0535 7.64557 9.85058 6.60413 8.55818C6.58165 9.89299 6.26088 10.8653 5.64179 11.4752C4.78894 12.3146 4.79898 13.2619 5.67187 14.3171C2.04833 12.3888 1.53711 9.80248 4.13816 6.55834C4.29949 7.34206 4.69042 7.82323 5.31101 8.00184C4.63456 5.13127 5.34629 2.68534 7.44618 0.664062C7.45908 5.14972 8.83461 5.54842 10.5738 7.55072C12.4515 9.95358 11.348 12.7265 8.25564 14.3359Z" fill="url(#paint0_linear_7322_4302_about)"/>
-                  </g>
-                  <defs>
-                    <linearGradient id="paint0_linear_7322_4302_about" x1="11.1985" y1="4.41639" x2="3.19901" y2="12.4159" gradientUnits="userSpaceOnUse">
-                      <stop stopColor="#EF3E3D"/>
-                      <stop offset="1" stopColor="#FFC828"/>
-                    </linearGradient>
-                    <clipPath id="clip0_7322_4302_about">
-                      <rect width="14" height="14" fill="white" transform="translate(0 0.5)"/>
-                    </clipPath>
-                  </defs>
-                  </svg>
-                  <span className="text-praith-dark font-medium text-sm uppercase tracking-wider">{t('about.badge')}</span>
-                </div>
-              </div>
+              
               
               {/* Heading */}
-              <h2 className="font-bold leading-tight text-center lg:text-left text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+              <h2 className="font-bold leading-tight text-center lg:text-left text-2xl sm:text-3xl md:text-4xl lg:text-[42px]">
                 {t('about.heading')}
               </h2>
               
@@ -245,9 +210,6 @@ export default function Index() {
               >
                 <div className="relative z-10 max-w-[553px] space-y-7">
                   <div className="space-y-7">
-                    <div className="text-brand-green text-base font-semibold uppercase tracking-[2px] leading-4">
-                      {t('anywhere.badge')}
-                    </div>
                     <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-bold text-[#1B1F28] leading-tight tracking-wide">
                       {t('anywhere.heading')}
                     </h3>
@@ -282,7 +244,7 @@ export default function Index() {
       <FasterSettlements />
 
       {/* How It Works Section */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-black relative overflow-hidden">
+      <section id="how-it-works" className="py-12 sm:py-16 lg:py-20 bg-black relative overflow-hidden">
         {/* Background Text */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div
@@ -318,25 +280,9 @@ export default function Index() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="flex flex-col items-center text-center mb-12 sm:mb-16 space-y-4">
-            <div className="flex items-center gap-2 bg-white border border-gray-300 px-4 py-2 rounded-full">
-              <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clipPath="url(#clip0_7322_4302)">
-                  <path fillRule="evenodd" clipRule="evenodd" d="M8.25564 14.3359C8.95178 13.3064 9.01593 12.1945 8.44808 11.0002C8.29017 11.6409 8.00131 12.0298 7.58148 12.1669C7.97134 11.0535 7.64557 9.85058 6.60413 8.55818C6.58165 9.89299 6.26088 10.8653 5.64179 11.4752C4.78894 12.3146 4.79898 13.2619 5.67187 14.3171C2.04833 12.3888 1.53711 9.80248 4.13816 6.55834C4.29949 7.34206 4.69042 7.82323 5.31101 8.00184C4.63456 5.13127 5.34629 2.68534 7.44618 0.664062C7.45908 5.14972 8.83461 5.54842 10.5738 7.55072C12.4515 9.95358 11.348 12.7265 8.25564 14.3359Z" fill="url(#paint0_linear_7322_4302)"/>
-                </g>
-                <defs>
-                  <linearGradient id="paint0_linear_7322_4302" x1="11.1985" y1="4.41639" x2="3.19901" y2="12.4159" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#EF3E3D"/>
-                    <stop offset="1" stopColor="#FFC828"/>
-                  </linearGradient>
-                  <clipPath id="clip0_7322_4302">
-                    <rect width="14" height="14" fill="white" transform="translate(0 0.5)"/>
-                  </clipPath>
-                </defs>
-              </svg>
-              <span className="text-black font-medium text-sm uppercase">{t('howItWorks.badge')}</span>
-            </div>
+            
 
-            <h2 className="font-bold text-white uppercase leading-[120%] max-w-[709px] px-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+            <h2 className="font-bold text-white normal-case leading-[120%] max-w-[709px] px-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
               {t('howItWorks.heading')}
             </h2>
             <p className="text-white text-base sm:text-lg leading-6 px-4">{t('howItWorks.description')}</p>
@@ -435,23 +381,7 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-12 sm:mb-16">
-            <div className="inline-flex items-center gap-2 bg-praith-neutral-50 border border-praith-neutral-200 px-4 py-2 rounded-full mb-4 sm:mb-6">
-              <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clipPath="url(#clip0_7322_4302_features)">
-                  <path fillRule="evenodd" clipRule="evenodd" d="M8.25564 14.3359C8.95178 13.3064 9.01593 12.1945 8.44808 11.0002C8.29017 11.6409 8.00131 12.0298 7.58148 12.1669C7.97134 11.0535 7.64557 9.85058 6.60413 8.55818C6.58165 9.89299 6.26088 10.8653 5.64179 11.4752C4.78894 12.3146 4.79898 13.2619 5.67187 14.3171C2.04833 12.3888 1.53711 9.80248 4.13816 6.55834C4.29949 7.34206 4.69042 7.82323 5.31101 8.00184C4.63456 5.13127 5.34629 2.68534 7.44618 0.664062C7.45908 5.14972 8.83461 5.54842 10.5738 7.55072C12.4515 9.95358 11.348 12.7265 8.25564 14.3359Z" fill="url(#paint0_linear_7322_4302_features)"/>
-                </g>
-                <defs>
-                  <linearGradient id="paint0_linear_7322_4302_features" x1="11.1985" y1="4.41639" x2="3.19901" y2="12.4159" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#EF3E3D"/>
-                    <stop offset="1" stopColor="#FFC828"/>
-                  </linearGradient>
-                  <clipPath id="clip0_7322_4302_features">
-                    <rect width="14" height="14" fill="white" transform="translate(0 0.5)"/>
-                  </clipPath>
-                </defs>
-              </svg>
-              <span className="text-praith-dark font-medium text-sm uppercase tracking-wider">{t('features.badge')}</span>
-            </div>
+            
             
             <h2 className="font-bold leading-tight mb-3 sm:mb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
               {t('features.heading')}
@@ -515,6 +445,19 @@ export default function Index() {
               </div>
             </div>
           </div>
+          <div className="flex justify-center mt-8">
+            <button
+              className="bg-brand-green text-black font-semibold px-6 py-4 rounded-lg flex items-center gap-3 hover:bg-brand-green/90 transition-all w-full sm:w-auto"
+              onClick={() => {
+                const el = document.getElementById('how-it-works');
+                if (el) el.scrollIntoView({ behavior: 'smooth' });
+              }}
+              aria-label="See how it Works"
+            >
+              <span className="text-base sm:text-lg">{t('buttons.seeHowItWorks')}</span>
+              <ChevronDown className="w-5 h-5 sm:w-6 sm:h-6 transform -rotate-90" />
+            </button>
+          </div>
         </div>
       </section>
 
@@ -523,25 +466,9 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-12 sm:mb-16">
-            <div className="inline-flex items-center gap-2 bg-praith-neutral-50 border border-praith-neutral-200 px-4 py-2 rounded-full mb-4 sm:mb-6">
-              <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clipPath="url(#clip0_7322_4302_testimonial)">
-                  <path fillRule="evenodd" clipRule="evenodd" d="M8.25564 14.3359C8.95178 13.3064 9.01593 12.1945 8.44808 11.0002C8.29017 11.6409 8.00131 12.0298 7.58148 12.1669C7.97134 11.0535 7.64557 9.85058 6.60413 8.55818C6.58165 9.89299 6.26088 10.8653 5.64179 11.4752C4.78894 12.3146 4.79898 13.2619 5.67187 14.3171C2.04833 12.3888 1.53711 9.80248 4.13816 6.55834C4.29949 7.34206 4.69042 7.82323 5.31101 8.00184C4.63456 5.13127 5.34629 2.68534 7.44618 0.664062C7.45908 5.14972 8.83461 5.54842 10.5738 7.55072C12.4515 9.95358 11.348 12.7265 8.25564 14.3359Z" fill="url(#paint0_linear_7322_4302_testimonial)"/>
-                </g>
-                <defs>
-                  <linearGradient id="paint0_linear_7322_4302_testimonial" x1="11.1985" y1="4.41639" x2="3.19901" y2="12.4159" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#EF3E3D"/>
-                    <stop offset="1" stopColor="#FFC828"/>
-                  </linearGradient>
-                  <clipPath id="clip0_7322_4302_testimonial">
-                    <rect width="14" height="14" fill="white" transform="translate(0 0.5)"/>
-                  </clipPath>
-                </defs>
-              </svg>
-              <span className="text-praith-dark font-medium text-sm uppercase tracking-wider">{t('testimonials.badge')}</span>
-            </div>
             
-            <h2 className="font-bold text-black uppercase px-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+            
+            <h2 className="font-bold text-black normal-case px-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
               {t('testimonials.heading')}
             </h2>
           </div>
@@ -583,23 +510,7 @@ export default function Index() {
             {/* Left Side */}
             <div className="space-y-6 sm:space-y-8 text-center lg:text-left">
               <div className="space-y-3 sm:space-y-4">
-                <div className="inline-flex items-center gap-2 bg-praith-neutral-50 border border-praith-neutral-200 px-4 py-2 rounded">
-                  <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                      <linearGradient id="paint0_linear_7322_4302_faq" x1="11.1985" y1="4.41639" x2="3.19901" y2="12.4159" gradientUnits="userSpaceOnUse">
-                        <stop stopColor="#EF3E3D"/>
-                        <stop offset="1" stopColor="#FFC828"/>
-                      </linearGradient>
-                      <clipPath id="clip0_7322_4302_faq">
-                        <rect width="14" height="14" fill="white" transform="translate(0 0.5)"/>
-                      </clipPath>
-                    </defs>
-                    <g clipPath="url(#clip0_7322_4302_faq)">
-                      <path fillRule="evenodd" clipRule="evenodd" d="M8.25564 14.3359C8.95178 13.3064 9.01593 12.1945 8.44808 11.0002C8.29017 11.6409 8.00131 12.0298 7.58148 12.1669C7.97134 11.0535 7.64557 9.85058 6.60413 8.55818C6.58165 9.89299 6.26088 10.8653 5.64179 11.4752C4.78894 12.3146 4.79898 13.2619 5.67187 14.3171C2.04833 12.3888 1.53711 9.80248 4.13816 6.55834C4.29949 7.34206 4.69042 7.82323 5.31101 8.00184C4.63456 5.13127 5.34629 2.68534 7.44618 0.664062C7.45908 5.14972 8.83461 5.54842 10.5738 7.55072C12.4515 9.95358 11.348 12.7265 8.25564 14.3359Z" fill="url(#paint0_linear_7322_4302_faq)"/>
-                    </g>
-                  </svg>
-                  <span className="text-praith-dark font-medium text-sm uppercase tracking-wider">{t('faq.badge')}</span>
-                </div>
+                
                 
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center lg:text-left">{t('faq.heading')}</h2>
                 <p className="text-gray-600 text-base sm:text-lg text-center lg:text-left">{t('faq.description')}</p>
@@ -670,7 +581,7 @@ export default function Index() {
             
             <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-6 sm:gap-8 relative z-20">
               <div className="flex-1 text-center lg:text-left">
-                <span className="text-brand-green text-xs sm:text-sm font-semibold uppercase tracking-wider">{t('ctaSection.badge')}</span>
+                
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mt-3 sm:mt-4 max-w-lg mx-auto lg:mx-0">
                   {t('ctaSection.heading')}
                 </h2>

@@ -74,27 +74,19 @@ export default function ProductPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-16 sm:py-20 lg:py-28 xl:py-36">
           <div className="text-center">
             {/* Trust Badge */}
-            <div className="inline-flex items-center gap-2 bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-full px-4 py-2 mb-8">
-              <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
-              <span className="text-sm font-medium text-gray-300 uppercase tracking-wide">
-                100% TRUSTED PLATFORM
-              </span>
-            </div>
 
             <h1 className="font-bold text-white mb-8 leading-tight text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-              POWERING GLOBAL PAYMENTS
+              {t('productPage.hero.headingBefore')}
               <br />
-              WITH <span className="text-brand-green" style={{textShadow: '2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 0 2px 0 white, 2px 0 0 white, 0 -2px 0 white, -2px 0 0 white'}}>BLOCKCHAIN</span>
+              <span className="text-brand-green" style={{textShadow: '2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 0 2px 0 white, 2px 0 0 white, 0 -2px 0 white, -2px 0 0 white'}}>{t('productPage.hero.headingAccent')}</span>
             </h1>
             
             <p className="text-lg sm:text-xl text-gray-300 mb-10 max-w-4xl mx-auto leading-relaxed">
-              Praith Is A Blockchain-Powered Crypto Payment Gateway That Solves The Traditional 
-              Payment Problems. Our Platform Enables Fast, Low-Fee, And Borderless Transactions Using 
-              Stablecoins On The Tron And Binance Smart Chain (BEP-20) Networks.
+              {t('productPage.hero.description')}
             </p>
 
             <button className="bg-brand-green text-black font-bold py-4 px-8 rounded-lg text-lg hover:bg-brand-green/90 transition-all duration-200 transform hover:scale-105">
-              Get Started
+              {t('hero.getStarted')}
             </button>
           </div>
         </div>
@@ -104,7 +96,7 @@ export default function ProductPage() {
       <section className="bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="max-w-6xl mx-auto text-center">
           <h3 className="text-base sm:text-lg font-medium text-gray-600 mb-12 sm:mb-16">
-            Trusted by Over 5,500+ Industry Leaders
+            {t('productPage.trustedBy.heading')}
           </h3>
           
           {/* Crypto logos container - arranged in two rows like the image */}
@@ -155,18 +147,16 @@ export default function ProductPage() {
               <div className="flex items-center gap-2 mb-6">
                 <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
                 <span className="text-sm font-medium text-gray-600 uppercase tracking-wide">
-                  WHAT WE DO
+                  {t('productPage.popUpCheckout.badge')}
                 </span>
               </div>
               
               <h2 className="font-bold text-gray-900 mb-6 leading-tight sm:leading-[1.2] lg:leading-[1.1] tracking-[-0.5px] sm:tracking-[-1px] text-2xl sm:text-3xl md:text-4xl lg:text-[42px]">
-                Lorem ipsum dolor sit amet, consectetur elit.
+                {t('productPage.popUpCheckout.heading')}
               </h2>
               
               <p className="text-gray-600 mb-8 leading-relaxed text-sm sm:text-base md:text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla 
-                suspendisse tortor aene. Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit. Feugiat nulla suspendisse tortor aene.
+                {t('productPage.popUpCheckout.description')}
               </p>
 
               {/* Feature List */}
@@ -177,11 +167,10 @@ export default function ProductPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                      Lorem ipsum dolor sit amet
+                      {t('productPage.popUpCheckout.features.bankSecurity.title')}
                     </h3>
                     <p className="text-gray-600 text-sm sm:text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                      Feugiat nulla suspendisse tortor aene.
+                      {t('productPage.popUpCheckout.features.bankSecurity.description')}
                     </p>
                   </div>
                 </div>
@@ -192,11 +181,10 @@ export default function ProductPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                      Lorem ipsum dolor sit amet
+                      {t('productPage.popUpCheckout.features.globalPayments.title')}
                     </h3>
                     <p className="text-gray-600 text-sm sm:text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                      Feugiat nulla suspendisse tortor aene.
+                      {t('productPage.popUpCheckout.features.globalPayments.description')}
                     </p>
                   </div>
                 </div>
@@ -207,18 +195,17 @@ export default function ProductPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                      Lorem ipsum dolor sit amet
+                      {t('productPage.popUpCheckout.features.simpleSetup.title')}
                     </h3>
                     <p className="text-gray-600 text-sm" style={{fontSize: '16px'}}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                      Feugiat nulla suspendisse tortor aene.
+                      {t('productPage.popUpCheckout.features.simpleSetup.description')}
                     </p>
                   </div>
                 </div>
               </div>
 
               <button className="bg-brand-green text-black font-bold py-4 px-8 rounded-lg text-lg hover:bg-brand-green/90 transition-all duration-200 transform hover:scale-105">
-                Get Started
+                {t('hero.getStarted')}
               </button>
             </div>
 
@@ -241,23 +228,22 @@ export default function ProductPage() {
             <div className="flex justify-center mb-8">
               <div className="bg-orange-100 text-orange-600 px-4 py-2 rounded-full text-sm font-medium flex items-center">
                 <span className="text-orange-500 mr-2">🔥</span>
-                BENEFITS
+                {t('productPage.benefits.badge')}
               </div>
             </div>
 
             {/* Main Heading */}
             <div className="text-center mb-6">
               <h2 className="font-bold text-gray-900 leading-tight text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-                TAKE YOUR BUSINESS{' '}
-                <span className="text-brand-green">FURTHER</span>, FASTER<br />
-                AND <span className="text-brand-green">GLOBAL</span>
+                {t('productPage.benefits.headingLine1')}{' '}
+                <span className="text-brand-green">{t('productPage.benefits.headingAccent')}</span>
               </h2>
             </div>
 
             {/* Subtitle */}
             <div className="text-center mb-16">
               <p className="text-lg text-gray-600">
-                Some benefits that makes our platform unique
+                {t('productPage.benefits.description')}
               </p>
             </div>
 
@@ -271,9 +257,9 @@ export default function ProductPage() {
                     <img src="/arrow.png" alt="Arrow" style={{width: '42px', height: '41px'}} />
                   </div>
                   <div className="mt-4 text-left">
-                    <h3 className="font-bold text-gray-900 mb-2 text-base sm:text-lg">SEND & RECEIVE</h3>
+                    <h3 className="font-bold text-gray-900 mb-2 text-base sm:text-lg">{t('productPage.benefits.cards.sendReceive.title')}</h3>
                     <p className="text-gray-600 text-sm" style={{fontSize: '16px'}}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aenean.
+                      {t('productPage.benefits.cards.sendReceive.description')}
                     </p>
                   </div>
                 </div>
@@ -284,9 +270,9 @@ export default function ProductPage() {
                       <img src="/wallet.png" alt="Wallet" style={{width: '43px', height: '39px'}} />
                     </div>
                   <div className="mt-4 text-left">
-                    <h3 className="font-bold text-gray-900 mb-2 text-base sm:text-lg">SEND & RECEIVE</h3>
+                    <h3 className="font-bold text-gray-900 mb-2 text-base sm:text-lg">{t('productPage.benefits.cards.secureWallet.title')}</h3>
                     <p className="text-gray-600 text-sm" style={{fontSize: '16px'}}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aenean.
+                      {t('productPage.benefits.cards.secureWallet.description')}
                     </p>
                   </div>
                 </div>
@@ -296,8 +282,8 @@ export default function ProductPage() {
               <div className="flex justify-center">
                 <div className="bg-brand-green rounded-3xl px-8 pt-8 relative flex flex-col" style={{width: '500px', height: '610px'}}>
                   <div className="text-center mb-6">
-                    <h3 className="text-2xl font-bold text-black mb-4">LOREM IPSUM DOLOR SIT AMET</h3>
-                    <p className="text-black text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In amet, morbi non at sed neque.</p>
+                    <h3 className="text-2xl font-bold text-black mb-4">{t('productPage.benefits.centerCard.heading')}</h3>
+                    <p className="text-black text-sm">{t('productPage.benefits.centerCard.description')}</p>
                   </div>
                   <div className="flex justify-center mt-auto">
                     <img src="/iPhones.png" alt="iPhones" className="w-100 h-auto object-contain" />
@@ -313,9 +299,9 @@ export default function ProductPage() {
                     <img src="/chart.png" alt="Chart" style={{width: '42px', height: '42px'}} />
                   </div>
                   <div className="mt-4 text-left">
-                    <h3 className="font-bold text-gray-900 mb-2 text-base sm:text-lg">SEND & RECEIVE</h3>
+                    <h3 className="font-bold text-gray-900 mb-2 text-base sm:text-lg">{t('productPage.benefits.cards.realTimeReporting.title')}</h3>
                     <p className="text-gray-600 text-sm" style={{fontSize: '16px'}}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aenean.
+                      {t('productPage.benefits.cards.realTimeReporting.description')}
                     </p>
                   </div>
                 </div>
@@ -326,9 +312,9 @@ export default function ProductPage() {
                     <img src="/reload.png" alt="Reload" style={{width: '58px', height: '47px'}} />
                   </div>
                   <div className="mt-4 text-left">
-                    <h3 className="font-bold text-gray-900 mb-2 text-base sm:text-lg">SEND & RECEIVE</h3>
+                    <h3 className="font-bold text-gray-900 mb-2 text-base sm:text-lg">{t('productPage.benefits.cards.instantSettlements.title')}</h3>
                     <p className="text-gray-600 text-sm" style={{fontSize: '16px'}}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aenean.
+                      {t('productPage.benefits.cards.instantSettlements.description')}
                     </p>
                   </div>
                 </div>
@@ -351,12 +337,12 @@ export default function ProductPage() {
             {/* Right Section - Content */}
             <div className="flex-1 max-w-lg">
               <div className="mb-6">
-                <p className="text-orange-500 text-sm font-medium mb-2 uppercase tracking-wide">▲ OUR FEATURES</p>
+                <p className="text-orange-500 text-sm font-medium mb-2 uppercase tracking-wide">▲ {t('productPage.features.badge')}</p>
                 <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                  Lorem ipsum dolor eliten amet, consectetur.
+                  {t('productPage.features.heading')}
                 </h2>
                 <p className="text-gray-600 text-lg mb-8">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aenean. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat nulla suspendisse tortor aenean.
+                  {t('productPage.features.description')}
                 </p>
               </div>
 
@@ -368,7 +354,7 @@ export default function ProductPage() {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span className="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                  <span className="text-gray-700">{t('productPage.features.bullets.a')}</span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-5 h-5 rounded-full flex items-center justify-center mr-3" style={{backgroundColor: '#f6f7f9'}}>
@@ -376,7 +362,7 @@ export default function ProductPage() {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span className="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                  <span className="text-gray-700">{t('productPage.features.bullets.b')}</span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-5 h-5 rounded-full flex items-center justify-center mr-3" style={{backgroundColor: '#f6f7f9'}}>
@@ -384,7 +370,7 @@ export default function ProductPage() {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span className="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                  <span className="text-gray-700">{t('productPage.features.bullets.c')}</span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-5 h-5 rounded-full flex items-center justify-center mr-3" style={{backgroundColor: '#f6f7f9'}}>
@@ -392,13 +378,13 @@ export default function ProductPage() {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span className="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                  <span className="text-gray-700">{t('productPage.features.bullets.d')}</span>
                 </div>
               </div>
 
               {/* Get Started Button */}
               <button className="bg-brand-green text-black font-semibold px-8 py-3 rounded-lg hover:bg-brand-green/90 transition-all duration-200 transform hover:scale-105">
-                Get Started
+                {t('hero.getStarted')}
               </button>
             </div>
           </div>
@@ -498,9 +484,8 @@ export default function ProductPage() {
               className="absolute bottom-0 left-0 w-auto h-auto object-contain pointer-events-none z-10"
             />
             
-            <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-6 sm:gap-8 relative z-20">
+              <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-6 sm:gap-8 relative z-20">
               <div className="flex-1 text-center lg:text-left">
-                <span className="text-brand-green text-xs sm:text-sm font-semibold uppercase tracking-wider">{t('ctaSection.badge')}</span>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mt-3 sm:mt-4 max-w-lg mx-auto lg:mx-0">
                   {t('ctaSection.heading')}
                 </h2>
